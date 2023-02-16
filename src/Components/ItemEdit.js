@@ -30,8 +30,7 @@ function ItemEdit() {
   };
 
   const updateItem = (updatedItem) => {
-    console.log(updatedItem);
-    axios
+   axios
       .put(`${API}/items/${id}`, updatedItem)
       .then(
         () => {

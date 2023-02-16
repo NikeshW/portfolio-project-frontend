@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 function ClaimForm(props) {
-
   let { id } = useParams();
   const { claimDetails } = props;
 
@@ -18,7 +17,7 @@ function ClaimForm(props) {
   };
   useEffect(() => {
     if (claimDetails) {
-        setClaim(claimDetails);
+      setClaim(claimDetails);
     }
   }, [id, claimDetails, props]);
 
@@ -29,17 +28,16 @@ function ClaimForm(props) {
       props.toggleView();
     }
     setClaim({
-        user_name: "",
-        email: "",
-        phone_number: "",
-        claim_note: "",
-        item_id: id,
+      user_name: "",
+      email: "",
+      phone_number: "",
+      claim_note: "",
+      item_id: id,
     });
-    
   };
 
-  return <div>
-          {props.children}
+  return (
+    <div>
       <form onSubmit={handleSubmit}>
         <label htmlFor="user_name">Name:</label>
         <input
@@ -81,7 +79,8 @@ function ClaimForm(props) {
 
         <input type="submit" />
       </form>
-  </div>;
+    </div>
+  );
 }
 
 export default ClaimForm;
