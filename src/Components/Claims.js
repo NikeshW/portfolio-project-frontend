@@ -63,7 +63,10 @@ function Claims() {
     <div>
     <section className="claims">
       <h2>Claim this item</h2>
-      <ClaimForm handleSubmit={handleAdd}/>
+      <ClaimForm handleSubmit={handleAdd}>
+      <h3>Add a New Claim</h3>
+        </ClaimForm >
+       
       
       {claims.map((claim) => (
         <Claim

@@ -39,7 +39,7 @@ function ClaimForm(props) {
   };
 
   return <div>
-          {/* {props.children} */}
+          {props.children}
       <form onSubmit={handleSubmit}>
         <label htmlFor="user_name">Name:</label>
         <input
