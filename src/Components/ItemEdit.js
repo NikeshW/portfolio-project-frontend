@@ -17,10 +17,10 @@ function ItemEdit() {
   const onChange = (e) => {
     async function fileToBase64(file) {
       return new Promise((resolve, reject) => {
-        const reader = new FileReader();
-        reader.readAsDataURL(file);
-        reader.onload = () => resolve(reader.result);
-        reader.onerror = (error) => reject(error);
+        const reader = new FileReader(); // built in function
+        reader.readAsDataURL(file); // methods that reads the file and turns it into data uri
+        reader.onload = () => resolve(reader.result); // if file is read resolve with the uri
+        reader.onerror = (error) => reject(error); // if the file fails to be read reject with the error
       });
     }
 

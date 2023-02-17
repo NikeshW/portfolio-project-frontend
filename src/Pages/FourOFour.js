@@ -1,8 +1,8 @@
-import React from 'react'
+import Error from "../Components/Error"
 
 function FourOFour() {
   return (
-    <div>FourOFour</div>
+    <div><Error/></div>
   )
 }
 
