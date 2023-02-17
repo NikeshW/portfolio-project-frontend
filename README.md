@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Full stack portfolio project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+## Buy Nothing
 
-### `npm start`
+Buy Nothing! An app where users are able to list items that they want to give away, so another user can reach out to the user who listed the item and pick up the item from them.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+A user can see a Welcome page with a Navbar at the top. The Navbar has the app title which is clickable, that navigates the user to the home page. The Navbar also has 'About us' link which takes the user to an info page which describes about the app's purpose in brief. The Navbar on the Welcome page has a link with a text "Add New Item" that takes the user to a form that helps user to add new item in the app to give away. On the Welcome page under the welcome message user can see a button with text 'Visit Items', this link will take the user to the index page where they will be able to see the pictures of the items that are listed to be given away.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The items pictures on the index page are clickable. A user can click an item picture card that takes them to the show page. The show page displays the details of that individual item. Below the details, the user have access to following 3 buttons Back, Edit and Delete. Back button takes the user back to the index page, Edit button takes the user to the edit form which is pre-filled with the details of the current item the viewer is seeing. The user can update any info of that particular item. The Delete button helps the user to delete the item from the index, after deleting the item, the user is navigated back to the index page. The show page also has a 'Claim item form' which a user can fill in to leave their contact info and a note with message to show thier intrest in that item.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Github repo links.
 
-### `npm run build`
+Github back-end repo link. [Back-end](https://github.com/NikeshW/portfolio-project-backend).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Github front-end repo link. [Front-end](https://github.com/NikeshW/portfolio-project-frontend).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Deployed site links
 
-### `npm run eject`
+Deployed back-end link from render. [Deployed-backend-site](https://portfolio-project-backend-qvhd.onrender.com)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Deployed front-end link from netlify. [Deployed-backend-site](https://buy-nothing.netlify.app)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Instructions to use this app via the deployed site
+1. Use the Deployed front end link to navigate to the site.
+2. After navigating to the site user can use the info mentioned in the top of this readme (line 5) to use this app.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Requirements to use the app via github repos
+- Fork and clone the backend repo
+- npm i
+- keep the backend running, open a new tab
+- fork and clone the front-end repo
+- cd to the front-end directory
+- npm i
+- touch .env
+- add the correct environmental variable
+- example of .env variable `REACT_APP_API_URL=http://localhost:3000`
+- npm start

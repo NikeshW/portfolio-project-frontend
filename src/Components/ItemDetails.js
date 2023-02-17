@@ -48,15 +48,15 @@ function ItemDetails() {
         <p>Posted on: {dateFormat(item.posted_date, "longDate")}</p>
         <div className="edit-form-buttons">
           <Link to={`/items`}>
-            <button className="back-button">back</button>
+            <button className="back-button">Back</button>
           </Link>
 
           <Link to={`/items/${item.id}/edit`}>
-            <button className="edit-button">edit</button>
+            <button className="edit-button">Edit</button>
           </Link>
 
           <button className="delete-button" onClick={handleDelete}>
-            delete
+            Delete
           </button>
         </div>
         <Claims/>
