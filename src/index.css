@@ -209,3 +209,21 @@ input[type="submit"] {
   width: 100px;
   border-radius: 5px;
 }
+
+.claims-delete-button{
+  border: none;
+  background-color: rgba(172, 84, 84, 0.651);;
+  height: 50px;
+  width: 100px;
+  border-radius: 5px;
+  margin:5px;
+}
+
+.claims-edit-button{
+  border: none;
+  background-color: rgba(172, 84, 84, 0.651);;
+  height: 50px;
+  width: 100px;
+  border-radius: 5px;
+  margin:5px;
+}

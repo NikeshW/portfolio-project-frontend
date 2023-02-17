@@ -20,10 +20,14 @@ function Claim({ claim, handleDelete, handleSubmit }) {
           {" "}
           <h4>{claim.user_name}</h4>
           <h5>{claim.claim_note}</h5>
-          <button onClick={() => handleDelete(claim.id)}>delete</button>
+         
+          <button className="claims-delete-button" onClick={() => handleDelete(claim.id)}>Delete</button>
+          
         </>
       )}
-      <button onClick={toggleView}>edit this claim</button>
+      
+      <button className="claims-edit-button" onClick={toggleView}>Edit this claim</button>
+      
     </div>
   );
 }
