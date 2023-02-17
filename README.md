@@ -20,9 +20,9 @@ Github front-end repo link. [Front-end](https://github.com/NikeshW/portfolio-pro
 
 ### Deployed site links
 
-Deployed back-end link from render. [Deployed-backend-site](https://portfolio-project-backend-qvhd.onrender.com)
+Deployed back-end link from render. [Deployed-back-end-site](https://portfolio-project-backend-qvhd.onrender.com)
 
-Deployed front-end link from netlify. [Deployed-front-site](https://buy-nothing.netlify.app)
+Deployed front-end link from netlify. [Deployed-front-end-site](https://buy-nothing.netlify.app)
 
 
 ### Instructions to use this app via the deployed site
